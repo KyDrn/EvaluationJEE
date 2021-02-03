@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name>Evaluation</display-name>
+  <servlet>
+    <servlet-name>ClientServlet</servlet-name>
+    <servlet-class>fr.epsi.controller.ClientServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ArticleServlet</servlet-name>
+    <servlet-class>fr.epsi.controller.ArticleServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ListeArticlesServlet</servlet-name>
+    <servlet-class>fr.epsi.controller.ListeArticlesServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ListeClientsServlet</servlet-name>
+    <servlet-class>fr.epsi.controller.ListeClientsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ListeFacturesServlet</servlet-name>
+    <servlet-class>fr.epsi.controller.ListeFacturesServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FactureServlet</servlet-name>
+    <servlet-class>fr.epsi.controller.FactureServlet</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+    <servlet-name>ClientServlet</servlet-name>
+    <url-pattern>/clients/create</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ArticleServlet</servlet-name>
+    <url-pattern>/articles/create</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ListeArticlesServlet</servlet-name>
+    <url-pattern>/articles</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ListeClientsServlet</servlet-name>
+    <url-pattern>/clients</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ListeFacturesServlet</servlet-name>
+    <url-pattern>/factures</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FactureServlet</servlet-name>
+    <url-pattern>/facture</url-pattern>
+  </servlet-mapping>
+</web-app>
